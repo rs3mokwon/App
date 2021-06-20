@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Snail Tent"
+        android:textSize="30dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="스네일텐트 아이디"
+        android:textStyle="bold"
+        android:textSize="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/putid"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="ID">
+        </EditText>
+
+        <Button
+            android:id="@+id/overlapbtn"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:text="중복확인">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="비밀번호"
+        android:textSize="15dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/putpw"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="비밀번호(8~32)자리">
+    </EditText>
+
+    <EditText
+        android:id="@+id/pwputok"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="비밀번호 재입력"></EditText>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="이름"
+        android:textSize="15dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/putname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="이름을 입력해 주세요.">
+    </EditText>
+
+    <EditText
+        android:id="@+id/putsex"
+        android:layout_width="60dp"
+        android:layout_height="1dp">
+    </EditText>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:text="성별"
+        android:textSize="15dp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioman"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="남자">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiowoman"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="여자">
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="전화번호"
+        android:textSize="15dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/putpn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="전화번호">
+    </EditText>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="이메일"
+        android:textSize="15dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/putemail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="이메일 입력">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/okbtn"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:text="가입하기">
+        </Button>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/join_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone">
+    </ProgressBar>
+</LinearLayout>

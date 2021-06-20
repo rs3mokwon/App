@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_paired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickButtonPaired"
+            android:src="@drawable/bluetoothbtn"
+            android:layout_weight="2"
+            android:layout_marginRight="2dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent">
+        </ImageButton>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/temp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/temper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="온도 "
+                android:layout_gravity="center"
+                android:textSize="15dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/hum"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/humd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="습도 "
+                android:layout_gravity="center"
+                android:textSize="15dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/gas"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/gas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="gas"
+                android:layout_gravity="center"
+                android:textSize="15dp">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="4">
+
+
+
+        <ImageButton
+            android:id="@+id/led"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ledbtn"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/fan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fanbtn"
+            android:text="F"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/motor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/motor"
+            android:text="G"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/anglebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anglebtn"
+            android:text="C"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+        </ImageButton>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/angledgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="각도"
+        android:gravity="center"
+        android:textSize="20dp">
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+    </FrameLayout>
+
+</LinearLayout>

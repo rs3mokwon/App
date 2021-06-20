@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1073847606349",
+    "project_id": "snailtent",
+    "storage_bucket": "snailtent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073847606349:android:80d5211e5812a861029004",
+        "android_client_info": {
+          "package_name": "com.example.rs3_snailtent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073847606349-a8gsjalr8e69g3gdgk3jnm70a4idg8cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_WAOSLEFcUYf9OOYtP_1IdxO_Ao7Ea20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073847606349-a8gsjalr8e69g3gdgk3jnm70a4idg8cr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

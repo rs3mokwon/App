@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:src="@drawable/login"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editid"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="ID">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editpw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Password">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/joinbtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="2dp"
+            android:text="Join">
+        </Button>
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="2dp"
+            android:text="login">
+        </Button>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/event">
+    </ImageView>
+
+</LinearLayout>
